@@ -3,7 +3,7 @@
 <% @strains.each do |strain| %>
     <div class="col-md-4" id="">
         <div class="show-strains">
-          <%= link_to strain["name"] %>
+          <%= link_to strain["name"], '/plant/' + strain["ucpc"] %>
         </div>
     </div>
   <% end %>

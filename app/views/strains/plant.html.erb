@@ -1,11 +1,21 @@
 
 
-<% @strains.each do |plant| %>
-    <%= @product.descr %>
-    <%= render json: paramss %>
-    <div class="col-md-4" id="">
+<% @strains.each do |strain| %>
+    <div class="col-md-6" id="">
         <div class="show-strains">
-          <%= link_to plant "name", name_index_path %>
+        <%= image_tag ("http://placehold.it/350x150")%>
         </div>
+    </div>
+    <div class="col-md-6">
+      <h1>Lineage:</h1>
+      <%= strain["lineage"]%>
+      <h1>Description:</h1>
+      <%= strain["symptoms"]%>
+      <h1>Reviews:</h1>
+      <%= link_to strain["reviews"]%>
+      <h1>Also Known As:</h1>
+      <%= strain[:genetics["names"]] %>
+      <br>
+      <p>For medicinal use only </p>
     </div>
   <% end %>

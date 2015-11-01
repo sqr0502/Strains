@@ -1,10 +1,7 @@
 class StrainsController < ApplicationController
 
   def index
-    # url = "http://leoqz.me:8443/api/strains"
-    # response = HTTParty.get(url)
-    # json_data = JSON.parse(response.body)
-    # @strains = json_data["data"]
+
   end
 
   def show
@@ -15,21 +12,10 @@ class StrainsController < ApplicationController
     @strains = json_data["data"]
   end
 
-  # def parse_data(json_data
-  #   strains = []
-  #   # json_data['data'].each do |strain|
-  #   # return strain["name"]
-  #
-  #   end
-  # end
-
-
   def plant
-
-      puts params[:id]
-      url = "http://api.leoqz.me/api/strains?symptom=" + params[:name]
-      response = HTTParty.get(url)
-      json_data = JSON.parse(response.body)
-      @strains = json_data["data"]
-    end
+    url = "http://api.leoqz.me/api/strain/" + params[:ucpc]
+    response = HTTParty.get(url)
+    json_data = JSON.parse(response.body)
+    @strains = json_data["data"]
+  end
 end

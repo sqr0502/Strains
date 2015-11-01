@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :strains, :name
 
   root 'symptoms#index'
-  post 'strains/plant' => 'strains#plant'
+
+  get '/plant/' => 'strains#plant'
+
+  get '/plant/:ucpc' => 'strains#plant'
 
   # get 'strains/index'
 

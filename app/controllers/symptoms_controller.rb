@@ -1,6 +1,6 @@
 class SymptomsController < ApplicationController
   def index
-
+    
   end
 
   #helper methods for getting list of strains
@@ -13,11 +13,4 @@ class SymptomsController < ApplicationController
     end
   helper_method :find_strains
 
-
-  def find_plant(name)
-    url = "http://api.leoqz.me/api/strains&#{name}"
-    response = HTTParty.get(url)
-    json_data = JSON.parse(response.body)
-    @name = json_data["data"]
-  end
 end
