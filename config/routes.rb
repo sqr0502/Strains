@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :strains
 
   root 'symptoms#index'
+
+
   # get 'strains/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

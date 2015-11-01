@@ -1,1 +1,9 @@
-<p> <%= @strain %> </p>
+
+
+<% @strains.each do |strain| %>
+    <div class="col-md-4">
+        <h1> <%= link_to strain["name"] %> </h1>
+
+    </div>
+
+  <% end %>
