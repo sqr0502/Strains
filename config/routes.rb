@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :strains, :name
 
   root 'symptoms#index'
-  get 'strains/plant' => 'strains#plant'
+  post 'strains/plant' => 'strains#plant'
 
   # get 'strains/index'
 
