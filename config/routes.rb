@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :strains
+  resources :strains, :name
 
   root 'symptoms#index'
-
+  get 'strains/plant' => 'strains#plant'
 
   # get 'strains/index'
 

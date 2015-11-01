@@ -1,3 +1,19 @@
+
+/*background image*/
+body {
+  background-image:url(leaf.png);
+  background-size: auto;
+}
+
+
+.header-symptoms {
+  background-color: white;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  margin-top: 20%;
+  /*padding: 2% 0 2% 0;*/
+}
+
 .show-strains {
   background-color: ;
   margin: 0 auto;
@@ -5,7 +21,6 @@
 
 }
 
-body {
-  background-image:url(leaf.png);
-  background-size: auto;
+.dropdown{
+  text-align: center;
 }

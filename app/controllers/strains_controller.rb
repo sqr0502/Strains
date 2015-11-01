@@ -23,4 +23,13 @@ class StrainsController < ApplicationController
   #   end
   # end
 
+
+  def plant
+    p "hello"
+      # puts params[:id]
+      # url = "http://api.leoqz.me/api/strains/" + params[:name]
+      # response = HTTParty.get(url)
+      # json_data = JSON.parse(response.body)
+      # @strains = json_data["data"]
+    end
 end
