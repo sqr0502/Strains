@@ -4,6 +4,14 @@ class StrainsController < ApplicationController
 
   end
 
+  # def lineage
+  #   lineage.fetch(:key) { "key" }
+  # end
+    def lineage
+     @lineage = lineage
+    end
+
+
   def show
     puts params[:id]
     url = "http://api.leoqz.me/api/strains?symptom=" + params[:id]
