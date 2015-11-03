@@ -4,21 +4,12 @@ body {
   background-color: #E4FDE1;
 }
 .unique {
-  background-image:url(leaf4.png);
-  /*background-repeat: no-repeat;*/
+  background-image:url(leaf.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 10%;
-  /*opacity: .5;*/
-  min-height: 100%;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  position: fixed;
-  left: 0;
+  padding: 15%;
 }
+
 
 /*intro page*/
 .header-symptoms {
@@ -26,13 +17,8 @@ body {
   font-family: 'Comfortaa', cursive;
   text-align: center;
   padding-top: 0.25%;
-  /*margin: 5% 20% 0 20%;*/
+  margin: 5% 20% 0 20%;
   height: 5%;
-}
-
-.logo {
-  font-family: 'Comfortaa', cursive;
-  font-size: 45px;
 }
 
 /*intro button menu*/
@@ -55,13 +41,9 @@ font-family: Arial, Verdana;
 font-size: 1.1em;
 }
 
-.col-md-6 {
-background-color: #FFFFFF ;
-}
 
-/*show symptom background*/
-#results{
-  background-color: white;
+.col-md-6 {
+background-color: #FFFFFF;
 }
 
 .background {
@@ -70,6 +52,7 @@ background-color: #FFFFFF ;
 }
 
 /*strain profile container*/
+  background-color: #F3F3F3;
 .flex-container {
   padding: 0;
   margin: 0;
@@ -85,6 +68,8 @@ background-color: #FFFFFF ;
 .move {
   text-align: center;
 }
+
+
 
 /*contains image and info*/
 .profile{
@@ -104,6 +89,8 @@ background-color: #FFFFFF ;
   margin-top: 1.3rem;
 }
 
+
+
 /*header name*/
 .header-name {
   text-align: center;
@@ -120,27 +107,16 @@ img {
   width: 700px;
 }
 
-/*QR Code image*/
-qr-code {
+
+.qr-code {
+  padding-left: 20%
   text-align: left;
-  width: 50%;
+  width: 80%;
 }
 .qr-code img{
   width:20%;
-}
+}*/
 
-/*results page text characteristics*/
 .info {
   background-color: white;
-  text-align: left;
-  padding-left: 6%;
-  padding-bottom: 3%;
 }
-/*
-footer {
-  /*display: flex;*/
-  /*text-align: center;*/
-  /*list-style: none;
-  display: inline;
-
-}*/
