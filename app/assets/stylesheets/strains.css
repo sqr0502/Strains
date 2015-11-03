@@ -127,10 +127,11 @@ qr-code {
   padding-left: 6%;
   padding-bottom: 3%;
 }
+/*
 footer {
   /*display: flex;*/
   /*text-align: center;*/
-  list-style: none;
+  /*list-style: none;
   display: inline;
 
-}
+}*/
