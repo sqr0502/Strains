@@ -16,11 +16,13 @@ body {
   height: 5%;
 }
 
+/*intro button menu*/
 .intro-menu {
   padding-top: 5%;
   text-align: center;
 }
 
+/*intro dropdown list menu*/
 #centerlist {
   text-align: center;
   left: 50%;
@@ -29,12 +31,16 @@ body {
   transform: translate(-50%, 0);
 }
 
-
-/*show symptom */
-.container {
-    background-color: white;
-    margin: 0 25% 0 25%;
+/*show symptom background*/
+#results{
+  background-color: white;
 }
+
+.background {
+  margin: 2% 15% 0 15%;
+
+}
+
 /*strain profile container*/
 .flex-container {
   padding: 0;
@@ -60,8 +66,6 @@ body {
   /*flex-flow: row;*/
   /*justify-content: center;*/
 }
-
-
 
 /*strain image*/
 .show-strains {
