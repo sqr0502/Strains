@@ -35,6 +35,15 @@ body {
   transform: translate(-50%, 0);
 }
 
+.show-strains-info {
+font-family: Arial, Verdana;
+font-size: 1.1em;
+}
+
+.col-md-6 {
+background-color: #FFFFFF ;
+}
+
 /*show symptom background*/
 #results{
   background-color: white;
@@ -97,13 +106,13 @@ img {
 }
 
 /*QR Code image*/
-/*.qr-code {
+qr-code {
   text-align: left;
   width: 50%;
 }
 .qr-code img{
   width:20%;
-}*/
+}
 
 .info {
   background-color: white;
