@@ -2,25 +2,77 @@
 /*background image*/
 body {
   background-image:url(leaf.png);
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
+/*intro page*/
 .header-symptoms {
   background-color: white;
   font-family: 'Comfortaa', cursive;
   text-align: center;
   margin-top: 5%;
-  /*padding: 2% 0 2% 0;*/
 }
 
-.show-strains {
-  background-color: ;
-  margin: 0 auto;
-  padding: 2% 0 2% 0;
+/*show symptom */
+.strain-results {
+  background-color: white;
 
 }
+/*strain profile container*/
+.flex-container {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  /*display: flex;*/
+  flex-flow: row wrap;
+}
 
-.dropdown{
+/*contains image and info*/
+.profile{
+  display: flex;
+  padding-bottom: 10%
   /*text-align: center;*/
+  /*flex-flow: row;*/
+  /*justify-content: center;*/
+}
+
+
+
+/*strain image*/
+.show-strains {
+  flex: 1 0 50%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1.3rem;
+}
+
+/*header name*/
+.header-name {
+  text-align: center;
+  background-color: white;
+  margin: 0 25% 0 25%;
+}
+/*Strain image*/
+img {
+  /*height: 50%;*/
+  width: 50%;
+  margin:0 auto;
+}
+.image{
+  width: 700px;
+}
+
+/*QR Code image*/
+/*.qr-code {
+  text-align: left;
+  width: 50%;
+}
+.qr-code img{
+  width:20%;
+}*/
+
+.info {
+  background-color: white;
 }
