@@ -4,10 +4,11 @@ body {
   background-color: #E4FDE1;
 }
 .unique {
-  background-image:url(leaf3.png);
+  background-image:url(leaf2.png);
   /*background-repeat: no-repeat;*/
   background-size: cover;
   padding: 15%;
+  /*opacity: .5;*/
 }
 
 /*intro page*/
