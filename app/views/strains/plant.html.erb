@@ -3,7 +3,9 @@
 <% @strains.each do |strain| %>
     <div class="col-xs-12 .col-md-8" id="">
         <div class="show-strains">
-        <%= image_tag ("http://placehold.it/350x150")%>
+          <%= strain["name"] %>
+          <br>
+        <%= image_tag strain["image"] %>
         </div>
     </div>
     <div class="col-xs-6 .col-md-8">
@@ -25,7 +27,7 @@
       <h1>Also Known As:</h1>
         <% a = strain["genetics"] %>
           <% b = a.values[0]  %>
-          <%= "#{b.gsub(/\//, ",")}" unless b.eql?(false)%>
+          <%= "#{b.gsub(/\//, ",")}" unless b.eql?(false)%><br>
 
 
 
