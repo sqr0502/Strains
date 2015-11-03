@@ -20,6 +20,11 @@ body {
   height: 5%;
 }
 
+.logo {
+  font-family: 'Comfortaa', cursive;
+  font-size: 45px;
+}
+
 /*intro button menu*/
 .intro-menu {
   padding-top: 5%;
