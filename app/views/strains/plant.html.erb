@@ -23,14 +23,13 @@
     <div class="profile">
       <div class="show-strains">
           <div class="image">
-          <img class="img-thumbnail" <%= image_tag strain["image"] %> 
+          <img class="img-thumbnail" <%= image_tag strain["image"] %>
           </div>
           <br>
-          <!-- <div class="qr-code">
-            <span>Scan QR for further information:
+          <div class="qr-code">
+            <h3>Scan QR for further information:</h3>
               <%= image_tag strain["qr"] %>
-              </span>
-          </div> -->
+          </div>
       </div>
 
       <div class="show-strains info">
@@ -41,7 +40,7 @@
           <br>
           <% end %>
 
-        <h1>Description:</h1>
+        <h1>Characteristics:</h1>
           <% strain["symptoms"].each do |k, v| %>
           <%= "#{k.capitalize} - #{v.to_f.round(2)}" %>
           <br>

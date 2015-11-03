@@ -4,10 +4,11 @@ body {
   background-color: #E4FDE1;
 }
 .unique {
-  background-image:url(leaf.png);
-  background-repeat: no-repeat;
+  background-image:url(leaf2.png);
+  /*background-repeat: no-repeat;*/
   background-size: cover;
   padding: 15%;
+  /*opacity: .5;*/
 }
 
 /*intro page*/
@@ -18,6 +19,11 @@ body {
   padding-top: 0.25%;
   margin: 5% 20% 0 20%;
   height: 5%;
+}
+
+.logo {
+  font-family: 'Comfortaa', cursive;
+  font-size: 45px;
 }
 
 /*intro button menu*/
@@ -33,6 +39,15 @@ body {
   right: auto;
   text-align: center;
   transform: translate(-50%, 0);
+}
+
+.show-strains-info {
+font-family: Arial, Verdana;
+font-size: 1.1em;
+}
+
+.col-md-6 {
+background-color: #FFFFFF ;
 }
 
 /*show symptom background*/
@@ -97,14 +112,26 @@ img {
 }
 
 /*QR Code image*/
-/*.qr-code {
+qr-code {
   text-align: left;
   width: 50%;
 }
 .qr-code img{
   width:20%;
-}*/
+}
 
+/*results page text characteristics*/
 .info {
   background-color: white;
+  text-align: left;
+  padding-left: 6%;
+  padding-bottom: 3%;
 }
+/*
+footer {
+  /*display: flex;*/
+  /*text-align: center;*/
+  /*list-style: none;
+  display: inline;
+
+}*/
