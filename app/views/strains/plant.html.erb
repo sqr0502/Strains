@@ -3,13 +3,13 @@
   <div class="header-name">
     <h1 class="name"><%= strain["name"] %></h1>
   </div>
-  <div class="row">
+  <div class="flex-container return">
     <div class="dropdown">
       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         Return to symptons
         <span class="caret"></span>
       </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <ul class="dropdown-menu dropdown-menu-right move" aria-labelledby="dropdownMenu1">
       <ul class="list-unstyled">
         <li><%= link_to "Anxiety", "/strains/anxiety" %></li>
         <li><%= link_to "Calming", "/strains/calming" %></li>

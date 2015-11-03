@@ -11,13 +11,24 @@ body {
   background-color: white;
   font-family: 'Comfortaa', cursive;
   text-align: center;
-  margin-top: 5%;
+  padding-top: 0.25%;
+  margin: 5% 20% 0 20%;
+  height: 5%;
+}
+
+.intro-menu {
+  padding-top: 5%;
+  text-align: center;
+}
+
+#centerlist {
+  text-align: center;
 }
 
 /*show symptom */
-.strain-results {
-  background-color: white;
-
+.container {
+    background-color: white;
+    margin: 0 25% 0 25%;
 }
 /*strain profile container*/
 .flex-container {
@@ -26,6 +37,14 @@ body {
   height: auto;
   /*display: flex;*/
   flex-flow: row wrap;
+}
+
+.return {
+  text-align: right;
+}
+
+.move {
+  text-align: center;
 }
 
 /*contains image and info*/
