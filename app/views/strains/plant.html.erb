@@ -1,21 +1,17 @@
 
 
 <% @strains.each do |strain| %>
-    <div class="col-xs-12 .col-md-8" id="">
+    <div class="col-xs-12 .col-md-6" id="">
         <div class="show-strains">
         <%= image_tag ("http://placehold.it/350x150")%>
         </div>
     </div>
-    <div class="col-xs-6 .col-md-8">
+    <div class="col-xs-6 .col-md-6">
       <h1>Lineage:</h1>
     <% strain["lineage"].each do |k, v| %>
     <%= "#{k}" %>
     <br>
     <% end %>
-
-
-
-
       <h1>Description:</h1>
       <% strain["symptoms"].each do |k, v| %>
       <%= "#{k.capitalize} - #{v.to_f.round(2)}" %>
@@ -26,10 +22,6 @@
         <% a = strain["genetics"] %>
           <% b = a.values[0]  %>
           <%= "#{b.gsub(/\//, ",")}" unless b.eql?(false)%>
-
-
-
-      <br>
     </div>
-    <br>
   <% end %>
+  <br>
