@@ -1,9 +1,16 @@
 
 /*background image*/
 body {
+  background-color: #E4FDE1;
+}
+.unique {
   background-image:url(leaf.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 15%;
+}
+.container-fluid {
+background-color: #FFFFFF;
 }
 
 /*intro page*/
@@ -16,22 +23,36 @@ body {
   height: 5%;
 }
 
+/*intro button menu*/
 .intro-menu {
   padding-top: 5%;
   text-align: center;
 }
 
+/*intro dropdown list menu*/
 #centerlist {
   text-align: center;
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
 }
 
-
-/*show symptom */
-.container {
-    background-color: white;
-    margin: 0 25% 0 25%;
+/*show symptom background*/
+#results{
+  background-color: white;
 }
+.col-md-6 {
+background-color: #F3F3F3;
+}
+
+.background {
+  margin: 2% 15% 0 15%;
+
+}
+
 /*strain profile container*/
+  background-color: #F3F3F3;
 .flex-container {
   padding: 0;
   margin: 0;
@@ -48,6 +69,8 @@ body {
   text-align: center;
 }
 
+
+
 /*contains image and info*/
 .profile{
   display: flex;
@@ -56,8 +79,6 @@ body {
   /*flex-flow: row;*/
   /*justify-content: center;*/
 }
-
-
 
 /*strain image*/
 .show-strains {

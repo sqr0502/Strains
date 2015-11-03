@@ -1,4 +1,5 @@
 
+
 <% @strains.each do |strain| %>
   <div class="header-name">
     <h1 class="name"><%= strain["name"] %></h1>
@@ -47,9 +48,9 @@
           <br>
           <% end %>
 
-<<<<<<< HEAD
+
           <br>
-          <div class="dropdown">
+          <!-- <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Symptons
               <span class="caret"></span>
@@ -62,16 +63,18 @@
                     <li><%= link_to "Appetite Gain", "/strains/appetite_gain" %></li>
                   </ul>
               </ul>
-            </div>
+            </div> -->
 
-=======
+
         <h1>Also Known As:</h1>
           <% a = strain["genetics"] %>
             <% b = a.values[0]  %>
             <%= "#{b.gsub(/\//, ",")}" unless b.eql?(false)%>
+            <br>
       </div>
+
     <% end %>
->>>>>>> 5c07331df0b6587014a6de7c29909546eac35ccb
+
 
   </div>
 
