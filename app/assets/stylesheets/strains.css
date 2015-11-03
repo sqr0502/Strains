@@ -4,8 +4,8 @@ body {
   background-color: #E4FDE1;
 }
 .unique {
-  background-image:url(leaf.png);
-  background-repeat: no-repeat;
+  background-image:url(leaf3.png);
+  /*background-repeat: no-repeat;*/
   background-size: cover;
   padding: 15%;
 }
