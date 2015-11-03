@@ -1,17 +1,24 @@
 
-
 <% @strains.each do |strain| %>
-    <div class="col-xs-12 .col-md-6" id="">
+
+  <div class="row">
+    <div class="col-xs-12 .col-sm-6 .col-lg-8">
         <div class="show-strains">
-        <%= image_tag ("http://placehold.it/350x150")%>
+          <%= strain["name"] %>
+          <br>
+        <%= image_tag strain["image"] %>
         </div>
     </div>
-    <div class="col-xs-6 .col-md-6">
+    <div class="col-xs-6 .col-lg-4">
       <h1>Lineage:</h1>
     <% strain["lineage"].each do |k, v| %>
     <%= "#{k}" %>
     <br>
     <% end %>
+
+
+
+
       <h1>Description:</h1>
       <% strain["symptoms"].each do |k, v| %>
       <%= "#{k.capitalize} - #{v.to_f.round(2)}" %>
@@ -21,7 +28,29 @@
       <h1>Also Known As:</h1>
         <% a = strain["genetics"] %>
           <% b = a.values[0]  %>
-          <%= "#{b.gsub(/\//, ",")}" unless b.eql?(false)%>
+          <%= "#{b.gsub(/\//, ",")}" unless b.eql?(false)%><br>
+          <p></p>
+          <h1>Scan QR for more information:</h1>
+          <%= image_tag strain["qr"] %>
+          <p></p>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Symptons
+              <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <ul class="list-unstyled">
+                    <li><%= link_to "Anxiety", "/strains/anxiety" %></li>
+                    <li><%= link_to "Calming", "/strains/calming" %></li>
+                    <li><%= link_to "Pain relief", "/strains/numbness" %></li>
+                    <li><%= link_to "Appetite Gain", "/strains/appetite_gain" %></li>
+                  </ul>
+              </ul>
+            </div>
+
+
+      <br>
     </div>
+    </div>
+
   <% end %>
-  <br>
