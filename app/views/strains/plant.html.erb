@@ -27,9 +27,8 @@
           </div>
           <br>
           <div class="qr-code">
-            <span>Scan QR for further information:
+            <h3>Scan QR for further information:</h3>
               <%= image_tag strain["qr"] %>
-              </span>
           </div>
       </div>
 
@@ -41,7 +40,7 @@
           <br>
           <% end %>
 
-        <h1>Description:</h1>
+        <h1>Characteristics:</h1>
           <% strain["symptoms"].each do |k, v| %>
           <%= "#{k.capitalize} - #{v.to_f.round(2)}" %>
           <br>
