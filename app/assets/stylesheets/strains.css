@@ -9,14 +9,12 @@ body {
   background-size: cover;
   padding: 15%;
 }
-.container-fluid {
-background-color: #FFFFFF;
-}
+
 
 /*intro page*/
 .header-symptoms {
   background-color: white;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Arial', cursive;
   text-align: center;
   padding-top: 0.25%;
   margin: 5% 20% 0 20%;
@@ -38,12 +36,14 @@ background-color: #FFFFFF;
   transform: translate(-50%, 0);
 }
 
-/*show symptom background*/
-#results{
-  background-color: white;
+.show-strains-info {
+font-family: Arial, Verdana;
+font-size: 1.1em;
 }
+
+
 .col-md-6 {
-background-color: #F3F3F3;
+background-color: #FFFFFF;
 }
 
 .background {
@@ -51,8 +51,7 @@ background-color: #F3F3F3;
 
 }
 
-/*strain profile container*/
-  background-color: #F3F3F3;
+
 .flex-container {
   padding: 0;
   margin: 0;
@@ -89,6 +88,8 @@ background-color: #F3F3F3;
   margin-top: 1.3rem;
 }
 
+
+
 /*header name*/
 .header-name {
   text-align: center;
@@ -105,10 +106,11 @@ img {
   width: 700px;
 }
 
-/*QR Code image*/
-/*.qr-code {
+
+.qr-code {
+  padding-left: 20%
   text-align: left;
-  width: 50%;
+  width: 80%;
 }
 .qr-code img{
   width:20%;
