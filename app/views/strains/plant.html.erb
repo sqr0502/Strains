@@ -31,6 +31,9 @@
           <% b = a.values[0]  %>
           <%= "#{b.gsub(/\//, ",")}" unless b.eql?(false)%><br>
           <p></p>
+          <h1>Scan QR for more information:</h1>
+          <%= image_tag strain["qr"] %>
+          <p></p>
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Symptons
@@ -50,5 +53,5 @@
       <br>
     </div>
     </div>
-  
+
   <% end %>
