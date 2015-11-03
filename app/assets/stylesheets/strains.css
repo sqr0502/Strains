@@ -4,11 +4,20 @@ body {
   background-color: #E4FDE1;
 }
 .unique {
-  background-image:url(leaf2.png);
+  background-image:url(leaf4.png);
   /*background-repeat: no-repeat;*/
   background-size: cover;
-  padding: 15%;
+  padding: 10%;
   /*opacity: .5;*/
+  min-height: 100%;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  left: 0;
 }
 
 /*intro page*/
